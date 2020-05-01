@@ -1,3 +1,29 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -5,22 +31,23 @@ body {
 }
 
 #rightMenu {
-    height: 60vh;
+    height: 250px;
     background: rgba(255, 255, 255, 0.219);
     position: absolute; 
     right: 0; 
-    top: 100px; 
+    top: 50px; 
     width: 150px; 
     font-size: 32px; 
     text-align: right; 
     color: #fff; 
     text-shadow: 0 0 3px lightskyblue; 
     padding-right: 20px;
+    padding-top: 25px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: groove 2px white;
+    border: groove 1px #555;
     border-right: none;
-    box-shadow: 0 0 10px lightskyblue;
+    box-shadow: 0 0 10px lightskyblue, inset 0 0 3px lightskyblue, inset 0 0 20px white;
 }
 #rightMenu li {
     list-style: none;
@@ -44,22 +71,37 @@ body {
   list-style: none;
   font-family: 'Gruppo', cursive;
   color: #fff;
+  line-height: 60px;
+  padding-top: 5px;
 }
 .main-menu-item {
-  float: none;
+    float: none;
 }
 .main-menu p {
+    line-height: 60px;
   width: 125px;
   float: left;
   height: 50px;
   margin-top: -10px;
-  line-height: 50px;
   text-align: center;
   font-size: 22px;
 }
 .main-menu img {
-  margin-top: -10px;
   width: 50px;
   height: 50px;
   float: left;
+}
+
+.card {
+    position: fixed;
+    top: 20px;
+    left: 350px;
+    height: 50px;
+    width: 100px;
+}
+.card h1{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    opacity: 0.8;
 }
