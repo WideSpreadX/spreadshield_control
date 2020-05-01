@@ -32,12 +32,11 @@ body {
 
 #rightMenu {
     height: 250px;
-    background: rgba(255, 255, 255, 0.219);
     position: absolute; 
     right: 0; 
     top: 50px; 
     width: 150px; 
-    font-size: 32px; 
+    font-size: 28px; 
     text-align: right; 
     color: #fff; 
     text-shadow: 0 0 3px lightskyblue; 
@@ -45,12 +44,14 @@ body {
     padding-top: 25px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: groove 1px #555;
     border-right: none;
-    box-shadow: 0 0 10px lightskyblue, inset 0 0 3px lightskyblue, inset 0 0 20px white;
+    /*   border: groove 1px #555;
+    background: rgba(255, 255, 255, 0.119);
+    box-shadow: 0 0 10px lightskyblue, inset 0 0 3px lightskyblue, inset 0 0 20px white; */
 }
 #rightMenu li {
     list-style: none;
+    font-family: 'Gruppo', cursive;
 }
 .main-menu {
   border-top: 2px groove #fff;
@@ -102,6 +103,14 @@ body {
 .card h1{
     color: white;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     opacity: 0.8;
+    font-family: 'Gruppo', cursive;
+    text-shadow: 0 0 3px lightskyblue;
+}
+.card p {
+    color: #fff;
+    text-shadow: 0 0 3px lightskyblue;
+    text-align: center;
+    font-family: 'Gruppo', cursive;
 }

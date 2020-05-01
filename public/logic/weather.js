@@ -24,9 +24,12 @@ console.log(data.list[0].main.temp); */
 const temp = data.list[0].main.temp;
 let convertedTemp = ((temp - 273.15) * 0.5555) + 32;
 let roundedTemp = convertedTemp.toFixed(0);
+const p = document.createElement('p')
+p.textContent = "Current Temp";
   const h1 = document.createElement('h1')
   h1.textContent = roundedTemp;
   container.appendChild(card);
+  card.appendChild(p);
   card.appendChild(h1);
 
 
