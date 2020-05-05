@@ -10,7 +10,7 @@ app.appendChild(container)
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-/* request.open('GET', ' http://api.openweathermap.org/data/2.5/forecast?lat=42.1234&lon=-71.5000&APPID=d7a3d11d2bbd5c820ec01744141c20e2', true) */
+request.open('GET', ' http://api.openweathermap.org/data/2.5/forecast?lat=42.1234&lon=-71.5000&APPID=d7a3d11d2bbd5c820ec01744141c20e2', true)
 
 
 request.onload = function() {
