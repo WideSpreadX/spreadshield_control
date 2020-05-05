@@ -22,7 +22,7 @@ console.log(data.list[0].main.temp); */
  const card = document.createElement('div')
       card.setAttribute('class', 'card');
 const temp = data.list[0].main.temp;
-let convertedTemp = ((temp - 273.15) * 0.5555) + 32;
+let convertedTemp = ((temp - 273.15) * 1.8) + 32;
 let roundedTemp = convertedTemp.toFixed(0);
 const p = document.createElement('p')
 p.textContent = "Current Temp";
