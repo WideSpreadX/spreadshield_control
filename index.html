@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./public/style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Gruppo|Italianno|Megrim|Syncopate"
     rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@v5.0.3/dist/amplitude.js"></script>
 </head>
 <body>
-    <div id="root" class="windshieldTouchscreenControlContainer" style="width: 800px; height: 480px; position: fixed; top: 0; left: 0; cursor: none;">
+    <div id="root" class="windshieldTouchscreenControlContainer" style="width: 800px; height: 480px; position: fixed; top: 0; left: 0;">
         <div class="cora" style="width: 200px; height: 300px; position: absolute; top: 100px; left: 300px;">
             <img src="./public/site/widespread_logo_1d.png" alt="Logo" width="200px" height="200px"style="opacity: 0.7; border-radius: 50%; border: solid 3px #444; box-shadow: 0 0 30px lightskyblue;">
             <img src="./public/site/widespread-logo_backdrop.png" alt="Logo Backdrop" width="200px" height="200px" style="opacity: 0.3; position: absolute; top: 0; left: 0;">
@@ -30,11 +31,15 @@
      -->
         </div>
         <div id="weather"></div>
-        <div class="main-menu">
+        <div id="audio-player">
+            <span class="amplitude-play"></span>
+        </div>
+        
+        <div class="main-menu"> 
             <ul>
-                <li><div class="main-menu-item"><p>Internet</p><img src="./public/site/icon_internet_1a.png" alt="Internet Icon"></div></li>
-                <li><div class="main-menu-item"><p>Search</p><img src="./public/site/icon_search-glass_1a.png" alt="Search Icon"></div></li>
-                <li><div class="main-menu-item"><p>Settings</p><img src="./public/site/icon_settings_1a.png" alt="Settings Icon"></div></li>
+                <li><div class="main-menu-item"><a href="/hb">Internet</a><img src="./public/site/icon_internet_1a.png" alt="Internet Icon"></div></li>
+                <li><div class="main-menu-item"><a>Search</a><img src="./public/site/icon_search-glass_1a.png" alt="Search Icon"></div></li>
+                <li><div class="main-menu-item"><a>Settings</a><img src="./public/site/icon_settings_1a.png" alt="Settings Icon"></div></li>
             </ul>
         </div>
     </div>
@@ -78,5 +83,6 @@
     printTime();
     </script>
     <script src="./public/logic/weather.js"></script>
+    <script src="./song.js"></script>
 </body>
 </html>

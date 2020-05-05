@@ -10,7 +10,7 @@ app.appendChild(container)
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', ' http://api.openweathermap.org/data/2.5/forecast?lat=42.1234&lon=-71.5000&APPID=d7a3d11d2bbd5c820ec01744141c20e2', true)
+/* request.open('GET', ' http://api.openweathermap.org/data/2.5/forecast?lat=42.1234&lon=-71.5000&APPID=d7a3d11d2bbd5c820ec01744141c20e2', true) */
 
 
 request.onload = function() {
@@ -42,7 +42,7 @@ console.log("Temperature: " + temp + "K");
 
 // Feels Like Conversion From K to Degrees F
 let feelsLike = data.list[0].main.feels_like;
-let convertedFeelsLike = ((feelsLike - 273.15) * 0.5555) + 32;
+let convertedFeelsLike = ((feelsLike - 273.15) * 1.8) + 32;
 
 
 showUser;
